@@ -198,14 +198,6 @@ summary:focus-visible {
   line-height: 0.87;
 }
 
-.hero-summary {
-  max-width: 37rem;
-  margin: 2rem 0 0;
-  color: #d7e4ed;
-  font-size: clamp(1.15rem, 2vw, 1.42rem);
-  line-height: 1.48;
-}
-
 .course-facts {
   margin: 0;
   font-family: var(--sans);
@@ -582,7 +574,6 @@ summary:focus-visible {
   }
 
   .eyebrow,
-  .hero-summary,
   .course-facts dt,
   .course-facts dd {
     color: #000;
@@ -651,4 +642,3 @@ summary:focus-visible {
     widows: 3;
   }
 }
-
