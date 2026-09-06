@@ -34,12 +34,3 @@ Within a larger repository, GitHub only discovers workflows in the repository-le
 Jekyll build action's `source` value from `.` to `./syllabus/fall2026`. A
 repository can publish only one Pages site, so coordinate this with any existing
 Pages workflow.
-
-## Content note
-
-The inherited Fall 2025 syllabus supplied the course description, schedule,
-learning outcomes, assessments, policies, advice, and references. The Fall 2026
-version changes the term and instructional team as requested. The obsolete exam
-schedule image has been replaced by a confirmation notice, and the illustrative
-Piazza screenshot has been omitted. The validation script compares the remaining
-content with the inherited source so policy text cannot drift unnoticed.
