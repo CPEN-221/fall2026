@@ -172,6 +172,9 @@ def check_built_site() -> None:
 
     parser = SiteParser()
     parser.feed(html_path.read_text(encoding="utf-8"))
+    config = (ROOT / "_config.yml").read_text(encoding="utf-8")
+    baseurl_match = re.search(r'^baseurl:\s*["\']?([^"\'\n]*)', config, flags=re.MULTILINE)
+    baseurl = baseurl_match.group(1).rstrip("/") if baseurl_match else ""
     for landmark in ("header", "nav", "main", "footer"):
         if landmark not in parser.tags:
             fail(f"rendered page is missing the {landmark} landmark")
@@ -187,11 +190,14 @@ def check_built_site() -> None:
         parsed = urlparse(href)
         if parsed.scheme or parsed.netloc:
             continue
-        if parsed.path in ("", "/"):
+        local_path = unquote(parsed.path)
+        if baseurl and (local_path == baseurl or local_path.startswith(baseurl + "/")):
+            local_path = local_path[len(baseurl) :] or "/"
+        if local_path in ("", "/"):
             if parsed.fragment and parsed.fragment not in parser.ids:
                 fail(f"broken section link: {href}")
             continue
-        target = output / unquote(parsed.path.lstrip("/"))
+        target = output / local_path.lstrip("/")
         if target.is_dir():
             target /= "index.html"
         if not target.exists():

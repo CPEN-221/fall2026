@@ -2,8 +2,8 @@ title: CPEN 221 — Software Construction I
 description: Course syllabus for CPEN 221 A/B, Fall 2026, at UBC.
 lang: en-CA
 timezone: America/Vancouver
-url: ""
-baseurl: ""
+url: "https://cpen-221.github.io"
+baseurl: "/fall2026"
 
 markdown: kramdown
 kramdown:
@@ -22,4 +22,3 @@ exclude:
   - vendor
 
 strict_front_matter: true
-

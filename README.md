@@ -25,12 +25,6 @@ section links, and local assets.
 
 ## Publish with GitHub Pages
 
-The included workflow is ready when this directory is the root of its own GitHub
-repository. In the repository settings, choose **GitHub Actions** as the Pages
-source and push to `main`.
-
-Within a larger repository, GitHub only discovers workflows in the repository-level
-`.github/workflows/` directory. Copy the included workflow there and change the
-Jekyll build action's `source` value from `.` to `./syllabus/fall2026`. A
-repository can publish only one Pages site, so coordinate this with any existing
-Pages workflow.
+In the repository settings, open **Pages** and choose **Deploy from a branch**.
+Select the `main` branch and the `/(root)` folder. GitHub Pages will rebuild the
+Jekyll site after each push to `main`.
