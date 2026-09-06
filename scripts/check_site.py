@@ -18,6 +18,9 @@ REQUIRED_FILES = (
     "_config.yml",
     "_layouts/default.html",
     "assets/css/main.scss",
+    "assets/fonts/fonts.css",
+    "assets/fonts/licenses/ibmplexmono-OFL.txt",
+    "assets/fonts/licenses/ibmplexsans-OFL.txt",
     "assets/js/site.js",
     "Gemfile",
 )
@@ -158,6 +161,17 @@ def check_source() -> None:
     css = (ROOT / "assets/css/main.scss").read_text(encoding="utf-8")
     if css.count("{") != css.count("}"):
         fail("stylesheet braces are unbalanced")
+
+    font_css_path = ROOT / "assets/fonts/fonts.css"
+    font_css = font_css_path.read_text(encoding="utf-8")
+    for family in ("IBM Plex Sans", "IBM Plex Mono"):
+        if family not in font_css:
+            fail(f"font stylesheet does not define {family}")
+    if re.search(r"(?:@import|https?://)", font_css):
+        fail("font stylesheet must use only self-hosted assets")
+    for relative in re.findall(r'src:\s*url\(["\']?([^"\')]+)', font_css):
+        if not (font_css_path.parent / relative).is_file():
+            fail(f"font stylesheet references a missing asset: {relative}")
 
 
 def check_built_site() -> None:

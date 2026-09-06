@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#071f35">
+    <meta name="theme-color" content="#082f55">
     {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/fonts/fonts.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
   </head>
@@ -15,36 +16,58 @@
     <header class="site-header" id="top">
       <div class="header-inner">
         <a class="course-mark" href="{{ '/' | relative_url }}" aria-label="CPEN 221 syllabus home">
-          <span>CPEN</span><strong>221</strong>
+          <strong>UBC</strong>
         </a>
-        <p>Department of Electrical and Computer Engineering</p>
-        <a class="header-link" href="{{ '/#policies' | relative_url }}">Course policies</a>
+        <p>Electrical and Computer Engineering</p>
+        <nav class="header-nav" aria-label="Primary navigation">
+          <a href="{{ '/#instructional-team' | relative_url }}">Course team</a>
+          <a href="{{ '/#class-meeting-times' | relative_url }}">Schedule</a>
+          <a href="{{ '/#policies' | relative_url }}">Policies</a>
+        </nav>
       </div>
     </header>
 
     <section class="hero" aria-labelledby="page-title">
-      <div class="hero-grid" aria-hidden="true"></div>
       <div class="hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">{{ page.term | default: 'Fall 2026' }} · CPEN 221 A/B</p>
-          <h1 id="page-title">Software<br>Construction I</h1>
+          <p class="eyebrow">CPEN 221 A/B</p>
+          <h1 id="page-title">Software Construction I</h1>
         </div>
-        <dl class="course-facts" aria-label="Course overview">
-          <div>
-            <dt>Term</dt>
-            <dd>{{ page.term | default: 'Fall 2026' }}</dd>
-          </div>
-          <div>
-            <dt>Instructors</dt>
-            <dd>Karthik Pattabiraman<br>Simon Oya</dd>
-          </div>
-          <div>
-            <dt>Campus</dt>
-            <dd>UBC Vancouver</dd>
-          </div>
-        </dl>
+        <p class="term-badge">{{ page.term | default: 'Fall 2026' }}</p>
       </div>
     </section>
+
+    {% if page.url == '/' %}
+      <section class="course-overview" aria-labelledby="overview-title">
+        <div class="overview-inner">
+          <h2 id="overview-title">Course at a glance</h2>
+          <div class="overview-grid">
+            <article class="overview-card">
+              <h3>Instructional team</h3>
+              <p>Karthik Pattabiraman<br>Simon Oya</p>
+              <p><strong>Head TA:</strong> Rudransh Kumar</p>
+              <a href="#instructional-team">Meet the course team</a>
+            </article>
+            <article class="overview-card">
+              <h3>Class meetings</h3>
+              <p><strong>Lectures:</strong> Tue &amp; Thu, 11:00–12:20</p>
+              <p><strong>Tutorial:</strong> Mon, 14:00</p>
+              <a href="#class-meeting-times">See meeting details</a>
+            </article>
+            <article class="overview-card">
+              <h3>Four modules</h3>
+              <p>Specifications and testing<br>Abstract data types<br>Recursion and systems<br>Concurrent programming</p>
+              <a href="#core-topics">Explore the course topics</a>
+            </article>
+          </div>
+          <aside class="policy-callout" aria-label="Course policies">
+            <strong>Policies</strong>
+            <p>Academic integrity, collaboration, generative AI, late submissions, and missed assessments are collected in one section.</p>
+            <a href="#policies">Review course policies</a>
+          </aside>
+        </div>
+      </section>
+    {% endif %}
 
     <details class="mobile-toc">
       <summary>Jump to a section</summary>
@@ -63,7 +86,7 @@
     <div class="page-shell">
       <aside class="section-rail">
         <nav aria-label="Syllabus sections">
-          <p class="rail-label">On this page</p>
+          <p class="rail-label">Syllabus sections</p>
           <a href="{{ '/#instructional-team' | relative_url }}">Instructional team</a>
           <a href="{{ '/#class-meeting-times' | relative_url }}">Meeting times</a>
           <a href="{{ '/#core-topics' | relative_url }}">Core topics</a>
