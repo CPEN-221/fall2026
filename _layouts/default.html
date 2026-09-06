@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en-CA' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#071f35">
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#syllabus-content">Skip to syllabus</a>
+    <div class="reading-progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="course-mark" href="{{ '/' | relative_url }}" aria-label="CPEN 221 syllabus home">
+          <span>CPEN</span><strong>221</strong>
+        </a>
+        <p>Department of Electrical and Computer Engineering</p>
+        <a class="header-link" href="{{ '/#policies' | relative_url }}">Course policies</a>
+      </div>
+    </header>
+
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">{{ page.term | default: 'Fall 2026' }} · CPEN 221 A/B</p>
+          <h1 id="page-title">Software<br>Construction I</h1>
+          <p class="hero-summary">A practical course in building software that is correct, comprehensible, and ready to change.</p>
+        </div>
+        <dl class="course-facts" aria-label="Course overview">
+          <div>
+            <dt>Term</dt>
+            <dd>{{ page.term | default: 'Fall 2026' }}</dd>
+          </div>
+          <div>
+            <dt>Instructors</dt>
+            <dd>Karthik Pattabiraman<br>Simon Oya</dd>
+          </div>
+          <div>
+            <dt>Campus</dt>
+            <dd>UBC Vancouver</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <details class="mobile-toc">
+      <summary>Jump to a section</summary>
+      <nav aria-label="Mobile syllabus sections">
+        <a href="{{ '/#instructional-team' | relative_url }}">Instructional team</a>
+        <a href="{{ '/#class-meeting-times' | relative_url }}">Meeting times</a>
+        <a href="{{ '/#core-topics' | relative_url }}">Topics</a>
+        <a href="{{ '/#learning-outcomes' | relative_url }}">Learning outcomes</a>
+        <a href="{{ '/#assessment-and-grading' | relative_url }}">Assessment</a>
+        <a href="{{ '/#policies' | relative_url }}">Policies</a>
+        <a href="{{ '/#guidelines-and-advice' | relative_url }}">Course guide</a>
+        <a href="{{ '/#books' | relative_url }}">Books</a>
+      </nav>
+    </details>
+
+    <div class="page-shell">
+      <aside class="section-rail">
+        <nav aria-label="Syllabus sections">
+          <p class="rail-label">On this page</p>
+          <a href="{{ '/#instructional-team' | relative_url }}">Instructional team</a>
+          <a href="{{ '/#class-meeting-times' | relative_url }}">Meeting times</a>
+          <a href="{{ '/#core-topics' | relative_url }}">Core topics</a>
+          <a href="{{ '/#learning-outcomes' | relative_url }}">Learning outcomes</a>
+          <a href="{{ '/#assessment-and-grading' | relative_url }}">Assessment &amp; grading</a>
+          <a href="{{ '/#policies' | relative_url }}">Policies</a>
+          <a href="{{ '/#course-communication' | relative_url }}">Communication</a>
+          <a href="{{ '/#collaboration' | relative_url }}">Collaboration</a>
+          <a href="{{ '/#guidelines-and-advice' | relative_url }}">Course guide</a>
+          <a href="{{ '/#books' | relative_url }}">Books</a>
+          <a href="{{ '/#land-acknowledgement' | relative_url }}">Land acknowledgement</a>
+        </nav>
+      </aside>
+
+      <main id="syllabus-content" class="syllabus-content" tabindex="-1">
+        {{ content }}
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <div>
+        <p><strong>CPEN 221</strong> · Software Construction I · Fall 2026</p>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
