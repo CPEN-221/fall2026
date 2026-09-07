@@ -3,7 +3,9 @@
 This directory is a self-contained Jekyll site for the CPEN 221 A/B syllabus. The
 student-facing content is in `index.md`; the page frame is in `_layouts/`, and the
 responsive and print styles are in `assets/`. The institutional visual system uses
-self-hosted IBM Plex Sans and IBM Plex Mono files under `assets/fonts/`.
+self-hosted fonts under `assets/fonts/`. Readers can choose IBM Plex Serif with IBM
+Plex Sans and IBM Plex Mono, or Google Sans Flex with Google Sans Code. The choice
+is retained in the browser and shared with the CPEN 221 readings and project sites.
 
 ## Preview locally
 

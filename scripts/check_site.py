@@ -19,9 +19,13 @@ REQUIRED_FILES = (
     "_layouts/default.html",
     "assets/css/main.scss",
     "assets/fonts/fonts.css",
+    "assets/fonts/licenses/googlesanscode-OFL.txt",
+    "assets/fonts/licenses/googlesansflex-OFL.txt",
     "assets/fonts/licenses/ibmplexmono-OFL.txt",
     "assets/fonts/licenses/ibmplexsans-OFL.txt",
+    "assets/fonts/licenses/ibmplexserif-OFL.txt",
     "assets/js/site.js",
+    "assets/js/typeface-switcher.js",
     "Gemfile",
 )
 
@@ -114,6 +118,7 @@ class SiteParser(HTMLParser):
         self.hrefs: list[str] = []
         self.tags: set[str] = set()
         self.title_text: list[str] = []
+        self.typeface_pickers = 0
         self._in_title = False
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
@@ -123,6 +128,8 @@ class SiteParser(HTMLParser):
             self.ids.add(values["id"] or "")
         if values.get("href"):
             self.hrefs.append(values["href"] or "")
+        if tag == "select" and "data-typeface-picker" in values:
+            self.typeface_pickers += 1
         if tag == "title":
             self._in_title = True
 
@@ -164,7 +171,13 @@ def check_source() -> None:
 
     font_css_path = ROOT / "assets/fonts/fonts.css"
     font_css = font_css_path.read_text(encoding="utf-8")
-    for family in ("IBM Plex Sans", "IBM Plex Mono"):
+    for family in (
+        "IBM Plex Serif",
+        "IBM Plex Sans",
+        "IBM Plex Mono",
+        "Google Sans Flex",
+        "Google Sans Code",
+    ):
         if family not in font_css:
             fail(f"font stylesheet does not define {family}")
     if re.search(r"(?:@import|https?://)", font_css):
@@ -172,6 +185,26 @@ def check_source() -> None:
     for relative in re.findall(r'src:\s*url\(["\']?([^"\')]+)', font_css):
         if not (font_css_path.parent / relative).is_file():
             fail(f"font stylesheet references a missing asset: {relative}")
+
+    layout = (ROOT / "_layouts/default.html").read_text(encoding="utf-8")
+    if "data-typeface-picker" not in layout:
+        fail("layout is missing the reading-type selector")
+    for value in ('value="plex"', 'value="google-sans"'):
+        if value not in layout:
+            fail(f"layout is missing typeface option {value}")
+    if "typeface-switcher.js" not in layout:
+        fail("layout does not load the typeface switcher")
+
+    switcher = (ROOT / "assets/js/typeface-switcher.js").read_text(encoding="utf-8")
+    for value in ('"plex"', '"google-sans"', '"cpen221-typeface"'):
+        if value not in switcher:
+            fail(f"typeface switcher is missing {value}")
+    for value in (
+        'html[data-typeface="plex"]',
+        'html[data-typeface="google-sans"]',
+    ):
+        if value not in css:
+            fail(f"stylesheet is missing the mapping for {value}")
 
 
 def check_built_site() -> None:
@@ -199,6 +232,8 @@ def check_built_site() -> None:
     title = "".join(parser.title_text)
     if "Course syllabus" not in title or "CPEN 221" not in title:
         fail("rendered page title does not identify the syllabus and course")
+    if parser.typeface_pickers != 1:
+        fail("rendered page must contain one reading-type selector")
 
     for href in parser.hrefs:
         parsed = urlparse(href)
