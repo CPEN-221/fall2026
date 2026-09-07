@@ -39,16 +39,6 @@
       </div>
     </section>
 
-    <div class="typeface-tools">
-      <label>
-        <span>Reading type</span>
-        <select data-typeface-picker aria-label="Reading typeface combination">
-          <option value="plex">IBM Plex Serif + IBM Plex Sans + IBM Plex Mono</option>
-          <option value="google-sans">Google Sans Flex + Google Sans Code</option>
-        </select>
-      </label>
-    </div>
-
     {% if page.url == '/' %}
       <section class="course-overview" aria-labelledby="overview-title">
         <div class="overview-inner">
@@ -116,6 +106,16 @@
       <main id="syllabus-content" class="syllabus-content" tabindex="-1">
         {{ content }}
       </main>
+    </div>
+
+    <div class="typeface-tools">
+      <label>
+        <span>Typeface option</span>
+        <select data-typeface-picker aria-label="Typeface option">
+          <option value="plex">IBM Plex Serif + IBM Plex Sans + IBM Plex Mono</option>
+          <option value="google-sans">Google Sans Flex + Google Sans Code</option>
+        </select>
+      </label>
     </div>
 
     <footer class="site-footer">

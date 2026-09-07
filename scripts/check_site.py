@@ -188,7 +188,15 @@ def check_source() -> None:
 
     layout = (ROOT / "_layouts/default.html").read_text(encoding="utf-8")
     if "data-typeface-picker" not in layout:
-        fail("layout is missing the reading-type selector")
+        fail("layout is missing the typeface-option selector")
+    if "<span>Typeface option</span>" not in layout:
+        fail("layout is missing the typeface-option label")
+    if not (
+        layout.find("</main>")
+        < layout.find('class="typeface-tools"')
+        < layout.find('class="site-footer"')
+    ):
+        fail("typeface option must appear after the page content and before the footer")
     for value in ('value="plex"', 'value="google-sans"'):
         if value not in layout:
             fail(f"layout is missing typeface option {value}")
@@ -233,7 +241,7 @@ def check_built_site() -> None:
     if "Course syllabus" not in title or "CPEN 221" not in title:
         fail("rendered page title does not identify the syllabus and course")
     if parser.typeface_pickers != 1:
-        fail("rendered page must contain one reading-type selector")
+        fail("rendered page must contain one typeface-option selector")
 
     for href in parser.hrefs:
         parsed = urlparse(href)
