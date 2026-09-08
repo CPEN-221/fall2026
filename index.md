@@ -608,7 +608,7 @@ CPEN 221 requires basic programming fluency. By fluency we mean comfort in writi
 
 If you know essential programming constructs (selection and iteration), and can work with primitive datatypes (int, float, char, etc. in C) and arrays of primitive types then you should be able to keep pace with the material in CPEN 221.
 
-Learning a new language is sometimes difficult, but one can easily navigate this task by separating the high-level problem-solving approach from the syntax of a particular language. Once you do this, you can take the solution approach and find the appropriate language features you need to use. Suppose you know C and are able to articulate a solution in C, then you can quickly map C code to Java code by relying on one of many Java resources on the WWW or a Java textbook. We recommend [Think Java](http://greenteapress.com/wp/think-java/) or [Head First Java](http://www.headfirstlabs.com/books/hfjava/) to get started. We have made available numerous slide decks to help you in this process. You can also practice Java syntax at [CodingBat](http://codingbat.com/).
+Learning a new language is sometimes difficult, but one can navigate this task by separating the high-level problem-solving approach from the syntax of a particular language. Once you do this, you can take the solution approach and find the appropriate language features you need to use. Suppose you know C and can articulate a solution in C. You can then map that code to Java with the CPEN 221 onboarding guides provided with the course, which cover the required Java 25 language material and development tools. The [current Java references](#books) below can answer more detailed questions. You can also practise short Java problems at [CodingBat](https://codingbat.com/java).
 
 It may not appear so during the term, but most former students attest to the need for learning aspects of a programming language on their own — and in a short timespan — as one of the major benefits of CPEN 221.
 
@@ -684,7 +684,7 @@ Achieving excellence in any activity takes time but there are few things you sho
 1. Start on assignments early. We cannot emphasise this enough.
 2. Understand the problem you are trying to solve using software. Decompose the problem into parts. Sketch a high-level solution on paper. Then write code - on a computer. You do not need to draw formal flowcharts; clear notes are often sufficient.
 3. Learn to read code. Start with the examples we provide.
-4. Learn to read software documentation. The [official Java tutorial](http://docs.oracle.com/javase/tutorial/getStarted/index.html) and the [Java SE API documentation](http://docs.oracle.com/javase/8/docs/api/index.html) are rather good.
+4. Learn to read software documentation. Use [dev.java](https://dev.java/learn/) for explanatory material and the [Java SE 25 API documentation](https://docs.oracle.com/en/java/javase/25/docs/api/index.html) to determine what library types and methods provide.
 5. You are working almost entirely with man-made artifacts. Try to understand the design choices that the programming language creators made. A program is simply some lines of (mostly) English text: think about how a computer is made to understand this text.
 6. Ask for help if you are stuck. The course staff are here to support you. Use office hours and the course discussion forum wisely. When you ask for help, be prepared to explain what you have done so far.
 7. Do not fear to write code that will not work and then to debug the code. You will learn more from that experience than from suggestions people may provide to avoid problems.
@@ -710,31 +710,50 @@ Stay motivated: [the payoff is worthwhile](http://www.wsj.com/articles/SB1000142
 
 # Books
 
-There is no required textbook but we have a lot of recommendations. We will provide course notes too.
+The course readings are the textbook for CPEN 221. You do not need to buy another
+book. The resources below are references and extensions: choose one that matches
+the question you are trying to answer.
 
-## Recommended Books
+## Closest companion
 
-The books listed here are strongly recommended for anyone considering a career building software systems. These books are worth consulting early and often.
+[Martin P. Robillard, *Introduction to Software Design with Java*, third edition
+(2026)](https://link.springer.com/book/9783032118202) is the closest companion to
+the course. It treats design through encapsulation, interfaces, state, testing,
+composition, inheritance, and functional techniques using current Java. The CPEN
+221 readings remain the authority for course terminology, specifications,
+representation invariants, concurrency, and assessment expectations.
 
-| Barbara Liskov and John Guttag. Program Development in Java: Abstraction, Specification, and Object-Oriented Design.                                                                                     | The major thrust of the course is inspired by the material in this book. The coverage of high-level concepts in this book is excellent although some of the Java syntax has aged a little.                                                    |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Joshua Bloch. Effective Java, third edition. Addison Wesley, 2017.                                                                                                                                       | This book explains, in about 80 short items, some key ideas in program style, as well as some subtleties of Java. You will find some of the items useful right away, and you will best appreciate others as you use more of Java’s features.  |
-| A Java reference book: You will need a comprehensive reference, and one that conveys concepts more concisely. One of the following is sufficient, although other books are also likely to be acceptable. |                                                                                                                                                                                                                                               |
-| Cay S. Horstmann and Gary Cornell. Core Java 2.                                                                                                                                                          | A complete description of the Java programming language and its features. More recent editions will cover features from the latest Java versions.                                                                                             |
-| Ken Arnold, James Gosling, and David Holmes. The Java Programming Language, 4th edition, Addison-Wesley, 2005.                                                                                           | A more concise explanation of Java. Assumes more background; much less explanation about how to use Java’s features. Some people will love this style, others will not. User interface libraries are not discussed.                           |
-| James Gosling, Bill Joy, Guy Steele, Gilad Bracha, and Alex Buckley. The Java Language Specification, either “third edition” or “Java SE 8 edition”.                                                     | The official reference for Java by its inventors. Great for reference, but not an easy way to learn Java. Available as a printed book, or online at [http://docs.oracle.com/javase/specs/](http://docs.oracle.com/javase/specs/).             |
-| Steve McConnell. Code Complete, 2nd edition. Microsoft Press.                                                                                                                                            | A wealth of real-world common-sense advice from the trenches at Microsoft: how to write quality code (and how not to). You will wish everyone you work with had read it.                                                                      |
-| Andreas Zeller. When Programs Fail: A Guide to Systematic Debugging, Morgan-Kaufman, 2006.                                                                                                               | This book indicates how to use divide-and-conquer to locate the causes of errors — and to fix them.                                                                                                                                           |
-| Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides. Design Patterns: Elements of Reusable Object-Oriented Software, Addison-Wesley, 1995.                                                          | The seminal book on design patterns, usually referred to as the “Gang of Four book”. Organised as a catalogue.                                                                                                                                |
-| Martin Fowler. Refactoring: Improving the Design of Existing Code, Addison-Wesley, 1999.                                                                                                                 | A book on techniques for restructuring code to make it more readable, extensible, and maintainable without changing its meaning. Particularly helpful for those coming from a non-object-oriented background. Examples are presented in Java. |
+## Books by purpose
 
-## Why Buy Books?
+| If you need… | Read… | Keep in mind… |
+|---|---|---|
+| a compact Java 25 reference | Benjamin J. Evans, Jason R. Clark, and David Flanagan, [*Java in a Nutshell*, ninth edition (2026)](https://www.oreilly.com/library/view/java-in-a/0642572255992/) | Use it to look up the language and core libraries, not as a cover-to-cover course text. |
+| a more detailed Java 25 reference | Cay S. Horstmann, [*Core Java, Volume I: Fundamentals*, fourteenth edition (2026)](https://www.informit.com/store/core-java-vol.-i-fundamentals-9780135558577) | It is thorough and substantially longer than this course requires. |
+| stronger testing technique | Maurício Aniche, [*Effective Software Testing* (2022)](https://www.oreilly.com/library/view/effective-software-testing/9781633439931/) | Especially relevant for specification-based tests, boundaries, and property-based testing. |
+| deeper foundations for specifications and data abstraction | Barbara Liskov and John Guttag, [*Program Development in Java* (2000)](https://www.oreilly.com/library/view/program-development-in/9780768685299/) | Read selected conceptual chapters. Its Java syntax and libraries are historical. |
+| short essays on Java API and class design | Joshua Bloch, [*Effective Java*, third edition (2018)](https://www.oreilly.com/library/view/effective-java-3rd/9780134686097/) | Read selected items. It covers Java 8 and 9, so check current Java 25 documentation. |
+| techniques for improving existing code | Martin Fowler, [*Refactoring*, second edition (2018)](https://martinfowler.com/books/refactoring.html) | The design ideas transfer to Java, although the second edition's examples use JavaScript. |
+| another view of modular design | John Ousterhout, [*A Philosophy of Software Design*, second edition (2021)](https://web.stanford.edu/~ouster/cgi-bin/aposd.php) | Treat it as an argued design position, not a rulebook. The free [Ousterhout–Martin design debate](https://github.com/johnousterhout/aposd-vs-clean-code) makes the disagreements explicit. |
+| engineering practices for long-lived code | Titus Winters, Tom Manshreck, and Hyrum Wright, [*Software Engineering at Google* (2020)](https://abseil.io/resources/swe-book) | The complete book is free online. Separate broadly useful principles from practices that depend on Google's scale. |
+| a disciplined approach to recursive programs | Matthias Felleisen, Robert Bruce Findler, Matthew Flatt, and Shriram Krishnamurthi, [*How to Design Programs*, second edition](https://htdp.org/2022-2-9/Book/index.html) | The book is free online and develops a useful design recipe, but its examples use Racket rather than Java. |
+| systematic debugging experiments | Andreas Zeller, [*The Debugging Book*](https://www.debuggingbook.org/) | The book is free and interactive. Its examples use Python; focus on the language-independent techniques. |
+| a next step after CPEN 221 | Martin Kleppmann and Chris Riccomini, [*Designing Data-Intensive Applications*, second edition (2026)](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781098119058/) | This is an advanced systems book, not a companion for weekly course material. |
 
-Aren’t books obsolete in the days of the Internet and widely-available programming advice? No. A good book is a well-written, clear, coherent, and comprehensive introduction to the subject material. The reason to pay for a book is for its writing and editing.
+## Authoritative online references
 
-The Internet, by comparison, can be extremely useful in helping you understand a specific error message or programming problem, and I encourage you to use it for that. The right Internet site can also give you a high-level idea of a particular concept you are unfamiliar with. But, in the main, freely-available material gives only a fractured and partial view of the conceptual material — and the concepts are much more important than low-level programming details.
+Use [dev.java](https://dev.java/learn/) when you need an explanation of a Java
+feature. Use the [Java SE 25 API](https://docs.oracle.com/en/java/javase/25/docs/api/index.html)
+for library contracts and the [Java SE 25 specifications](https://docs.oracle.com/en/java/javase/25/docs/specs/index.html)
+when exact language or JVM behaviour matters. The course uses JUnit 6.1.3; its
+[versioned documentation](https://docs.junit.org/6.1.3/overview.html) matches the
+examples and build files used in Fall 2026.
 
-Some of the books mentioned above are available in electronic formats for devices such as the iPad and the Kindle.
+## Access
+
+Before buying a book, check [O’Reilly for Higher Education through the UBC
+Library](https://guides.library.ubc.ca/az/oreilly-for-higher-education). UBC provides access to
+the titles on that service; sign in with your CWL when prompted. Several books in
+this list are also available directly from their authors or publishers.
 
 # Land Acknowledgement
 

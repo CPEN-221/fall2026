@@ -56,6 +56,77 @@ REMOVED_STAFF = (
     "Simon Hathout Willard",
 )
 
+OLD_JAVA_STARTING_POINT = (
+    "Learning a new language is sometimes difficult, but one can easily navigate "
+    "this task by separating the high-level problem-solving approach from the syntax "
+    "of a particular language. Once you do this, you can take the solution approach "
+    "and find the appropriate language features you need to use. Suppose you know C "
+    "and are able to articulate a solution in C, then you can quickly map C code to "
+    "Java code by relying on one of many Java resources on the WWW or a Java textbook. "
+    "We recommend [Think Java](http://greenteapress.com/wp/think-java/) or [Head First "
+    "Java](http://www.headfirstlabs.com/books/hfjava/) to get started. We have made "
+    "available numerous slide decks to help you in this process. You can also practice "
+    "Java syntax at [CodingBat](http://codingbat.com/)."
+)
+
+NEW_JAVA_STARTING_POINT = (
+    "Learning a new language is sometimes difficult, but one can navigate this task "
+    "by separating the high-level problem-solving approach from the syntax of a "
+    "particular language. Once you do this, you can take the solution approach and "
+    "find the appropriate language features you need to use. Suppose you know C and "
+    "can articulate a solution in C. You can then map that code to Java with the CPEN "
+    "221 onboarding guides provided with the course, which cover the required Java 25 "
+    "language material and development tools. The [current Java references](#books) "
+    "below can answer more detailed questions. You can also practise short Java "
+    "problems at [CodingBat](https://codingbat.com/java)."
+)
+
+OLD_DOCUMENTATION_HINT = (
+    "4. Learn to read software documentation. The [official Java tutorial]"
+    "(http://docs.oracle.com/javase/tutorial/getStarted/index.html) and the "
+    "[Java SE API documentation](http://docs.oracle.com/javase/8/docs/api/index.html) "
+    "are rather good."
+)
+
+NEW_DOCUMENTATION_HINT = (
+    "4. Learn to read software documentation. Use [dev.java](https://dev.java/learn/) "
+    "for explanatory material and the [Java SE 25 API documentation]"
+    "(https://docs.oracle.com/en/java/javase/25/docs/api/index.html) to determine what "
+    "library types and methods provide."
+)
+
+REQUIRED_READING_LINKS = (
+    "https://link.springer.com/book/9783032118202",
+    "https://www.oreilly.com/library/view/java-in-a/0642572255992/",
+    "https://www.informit.com/store/core-java-vol.-i-fundamentals-9780135558577",
+    "https://www.oreilly.com/library/view/effective-software-testing/9781633439931/",
+    "https://www.oreilly.com/library/view/program-development-in/9780768685299/",
+    "https://www.oreilly.com/library/view/effective-java-3rd/9780134686097/",
+    "https://martinfowler.com/books/refactoring.html",
+    "https://web.stanford.edu/~ouster/cgi-bin/aposd.php",
+    "https://github.com/johnousterhout/aposd-vs-clean-code",
+    "https://abseil.io/resources/swe-book",
+    "https://htdp.org/2022-2-9/Book/index.html",
+    "https://www.debuggingbook.org/",
+    "https://www.oreilly.com/library/view/designing-data-intensive-applications/9781098119058/",
+    "https://dev.java/learn/",
+    "https://docs.oracle.com/en/java/javase/25/docs/api/index.html",
+    "https://docs.oracle.com/en/java/javase/25/docs/specs/index.html",
+    "https://docs.junit.org/6.1.3/overview.html",
+    "https://guides.library.ubc.ca/az/oreilly-for-higher-education",
+)
+
+RETIRED_READING_TEXT = (
+    "Core Java 2",
+    "The Java Programming Language, 4th edition",
+    "Java SE 8 edition",
+    "Code Complete",
+    "When Programs Fail",
+    "Design Patterns: Elements of Reusable Object-Oriented Software",
+    "ocw.mit.edu",
+    "6.102",
+)
+
 
 def fail(message: str) -> None:
     raise AssertionError(message)
@@ -68,7 +139,16 @@ def strip_front_matter(markdown: str) -> str:
     return markdown[match.end() :]
 
 
-def inherited_body(markdown: str) -> str:
+def extract_section(markdown: str, heading: str, next_heading: str) -> str:
+    try:
+        start = markdown.index(heading)
+        end = markdown.index(next_heading, start)
+    except ValueError as error:
+        raise AssertionError(f"could not locate section {heading.strip()}") from error
+    return markdown[start:end]
+
+
+def inherited_body(markdown: str, approved_books: str) -> str:
     lines = markdown.replace("\r\n", "\n").splitlines()
     try:
         start = lines.index("> # Instructional Team")
@@ -108,6 +188,15 @@ def inherited_body(markdown: str) -> str:
         "[Equity, Diversity, Inclusion + Indigeneity (EDI.I) | UBC Applied Science]",
         "[Equity, Diversity, Inclusion + Indigeneity (EDI.I) \\| UBC Applied Science]",
     )
+    for old, new in (
+        (OLD_JAVA_STARTING_POINT, NEW_JAVA_STARTING_POINT),
+        (OLD_DOCUMENTATION_HINT, NEW_DOCUMENTATION_HINT),
+    ):
+        if old not in body:
+            fail("could not locate inherited reading recommendation")
+        body = body.replace(old, new, 1)
+    inherited_books = extract_section(body, "# Books\n", "# Land Acknowledgement\n")
+    body = body.replace(inherited_books, approved_books, 1)
     return re.sub(r"\n{4,}", "\n\n\n", body).rstrip() + "\n"
 
 
@@ -155,12 +244,25 @@ def check_source() -> None:
         if name in source:
             fail(f"removed staff member still appears in index.md: {name}")
 
+    books = extract_section(source, "# Books\n", "# Land Acknowledgement\n")
+    for link in REQUIRED_READING_LINKS:
+        if link not in books:
+            fail(f"books section is missing required link: {link}")
+    for retired in RETIRED_READING_TEXT:
+        if retired in books:
+            fail(f"books section retains retired reading text: {retired}")
+    normalized_books = " ".join(books.split())
+    if "The course readings are the textbook for CPEN 221" not in normalized_books:
+        fail("books section must state that the course readings are the textbook")
+    if "You do not need to buy another book" not in normalized_books:
+        fail("books section must state that no book purchase is required")
+
     ta_section = source.split("### Teaching Assistants", 1)[1].split("# Class Meeting Times", 1)[0]
     if len(re.findall(r"^- ", ta_section, flags=re.MULTILINE)) != 1:
         fail("the teaching-assistant section must contain exactly one named TA")
 
     if OLD.is_file():
-        expected = inherited_body(OLD.read_text(encoding="utf-8"))
+        expected = inherited_body(OLD.read_text(encoding="utf-8"), books)
         actual = strip_front_matter(source).rstrip() + "\n"
         if actual != expected:
             fail("student-facing content has drifted from the inherited syllabus")
