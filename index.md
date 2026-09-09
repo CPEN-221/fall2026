@@ -302,17 +302,10 @@ Example: Using the table below, a student in CPEN 221A who obtains 1060 points w
 | C-               | 581                 | 466       | 55                | 59  |
 | F.               | <= 580              | <= 465    | 0                 | 45  |
 
-### **Bonus Points**
+### **Bonus Points from Piazza Contributions**
 
-We will provide some credit for keeping up your enthusiasm for the course material. This pool of points may provide a small boost to your grade.
+We will provide some credit for being active in Piazza and helping answering questions from other students.
 
-- **Attendance in labs**: +0.3 points per session, up to a maximum of 3 points (attendance taken by TAs).
-
-<!-- Answering the questions associated with the readings: +0.25 points per, up to a maximum of 5 points. (you get full points by completing each reading questions before the associated lecture) -->
-
-<!-- Completing all lab activities with a minimum grade of C on each lab activity: +5 points. (Only the best 8 lab activities contribute to the baseline point aggregation so this incentivizes completeness.) -->
-
-- **Piazza Contributions**: 
     - 5 bonus points for the top answerer
     - 4 bonus points for top 2.5% answerers
     - 3 bonus points for top 5% answerers
@@ -353,7 +346,8 @@ The following table summarizes the assessments for which generative AI tools are
 
 For individual work (labs and mini-projects), we will offer some slack to account for different possibilities.
 
-- This form (To be added) can be used to indicate your use of late days. It is your responsibility to communicate the use of late days to the course staff through the administered poll, by latest 24 hours after your submission. Otherwise, the late days will not be accounted, and your latest code commit by the original deadline will be considered. 
+- This form [TO BE ADDED!] can be used to indicate your use of late days. It is your responsibility to communicate the use of late days to the course staff through the administered poll, by latest 24 hours after your submission. Otherwise, the late days will not be accounted, and your latest code commit by the original deadline will be considered. 
+- **IMPORTANT**: if you use a late day, you cannot take it back! Make sure you only fill the late day form when you actually need the late day.
 - You can submit up to 5 labs one day (24 hours) late with no penalty. 
 - We will allow you 3 late days that you can choose to distribute in increments of one day across the three mini-projects. (You can use one late day per mini-project, or all three for one mini-project, or one extra day for one mini-project and two extra days for a second mini-project.)
 - Any other concession will be on a case-by-case basis and will require a clear and acceptable rationale. (We will provide such concessions only in extenuating circumstances. For instance, we only use the best 9 grades for labs and so we may not need to grant a concession.)
