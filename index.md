@@ -16,17 +16,27 @@ permalink: /
 ### Teaching Assistants
 
 - Rudransh Kumar, MASc student, Electrical and Computer Engineering [Head TA]
-
+- Amirreza Soleimanbeigi, MASc student, Electrical and Computer Engineering
+- Rhys Byers, BASc student, Computer Engineering
+- Ali Osman, BASc student, Computer Engineering
+- Dana Ebadi, BASc student, Computer Engineering
+- Lucas Beitel, BASc student, Computer Engineering
+- Geoffrey Bian, BASc student, Computer Engineering
+- Donghwa Kim, BASc student, Computer Engineering
 
 # Class Meeting Times
 
 The class has scheduled lecture sessions, tutorial sessions and lab sessions.
 
-**Lectures:** We will meet for lecture sessions on Tuesdays and Thursdays (11am to 12:20pm) in [LIFE 2201](https://learningspaces.ubc.ca/classrooms/life-2201/). We will use these sessions to reinforce concepts that you should have done some pre-reading about, and these sessions will involve some interactivity and coding  demonstrations.
+**Lectures:** We will meet for lecture sessions on Tuesdays and Thursdays (11am to 12:20pm) in [CHEM B150](https://learningspaces.ubc.ca/find-a-space/?classroom=chem-b150&building=&filters=%257B%257D). 
+We will use these sessions to reinforce concepts that you should have done some pre-reading about, and these sessions will involve some interactivity and coding demonstrations.
 
-**Tutorials:** Tutorial sessions will be held on Mondays at 2p in [ESB 1013](https://learningspaces.ubc.ca/classrooms/esb-1013/). These sessions cover programming tools and other ideas that we consider germane to the course but may not always fall into the category of foundational principles.
+**Tutorials:** Tutorial sessions will be held on Mondays at 2pm in [ESB 1013](https://learningspaces.ubc.ca/classrooms/esb-1013/). 
+These sessions focus on exploring and understanding the foundational principles taught in lectures using relevant examples and problems and are often closely tied with the labs. 
+They are also an opportunity for learning how to use important parts of the programming toolkit like the IDE, build tools, and debugger.
 
-**Labs:** You should have all signed up for a lab section, which will normally meet once a week (excluding the first week of classes). Teaching assistants will lead these sessions, often providing an overview of some concept or task and being available to answer questions. The different lab sections are:
+**Labs:** You should have all signed up for a lab section, which will normally meet once a week (excluding the first week of classes). 
+Teaching assistants will lead these sessions, often providing an overview of some concept or task and being available to answer questions. The different lab sections are:
 
 | **Time**             | **Location** | **Section**   |
 | -------------------- | ------------ | ------------- |
@@ -38,11 +48,11 @@ The class has scheduled lecture sessions, tutorial sessions and lab sessions.
 | Thursdays 1:30-3pm   | MCLD 4002    | CPEN 221A L1C |
 | Fridays 2-3:30pm     | MCLD 4006    | CPEN 221B L1A |
 
-**Additional Sessions:** Because we lose some sessions to holidays and we may need extra rooms for the quizzes, we might use a few evenings as class meeting times for such assessments. This will be determined in the first few weeks of the term. 
 
 # Core Topics
 
-The course topics are organized into four modules. We will cover all of the topics mostly in keeping with the module structure outlined below, but there will be some key departures in sequencing when it is important to understand some concepts earlier (e.g., aspects of memory management in Module 3) even though they may be listed in a later module.
+The course topics are organized into four modules. 
+We will cover all of the topics mostly in keeping with the module structure outlined below, but there will be some key departures in sequencing when it is important to understand some concepts earlier (e.g., aspects of memory management in Module 3) even though they may be listed in a later module.
 
 ### Module 1: Static Typing, Specifications, Exceptions, Testing
 
@@ -262,73 +272,47 @@ These rules continue to apply even after the semester is over.
 
 ### Activities
 
-Your understanding of the course material will be assessed using a variety of course activities. The primary activities that we will use are indicated below. The total number of points you can obtain are described as follows.
+Your understanding of the course material will be assessed using a variety of course activities. 
+The primary activities that we will use are indicated below. The total number of points you can obtain are described as follows.
 
 (total # of points for an activity) = (# of assignments for the activity) x (max # of points attainable for any assignments of the activity) x (weight associated with the activity)
 
-- **Mini-Projects (MPs)**: The course will involve three mini-projects that will need to be completed individually. The mini-projects are opportunities to synthesize most of the course material and demonstrate one’s ability to implement correct, comprehensible and changeable software. Mini-Projects will span several weeks, allowing sufficient time for learning and implementation. Each mini-project will have a weight of 10 when determining the final grade. (Total number of points: 3 x 10 x 10 = 300.)
-- **Labs**: Each week, there will be shorter activities that will touch upon recent topics, and will typically involve an overview or discussion led by the teaching assistants during the lab sessions. The labs may include weekly programming tasks for additional practice. You may collaborate with one other student on these activities. Lab work should, however, be submitted individually. You must indicate who you collaborated with for each lab activity. Each lab activity will have a weight of 2 when determining the final grade, and we will use the best 9 lab grades in the final grade computation. (Total number of points: 9 x 9 x 2 = 162.)
-- **Programming Proficiency Tests (PPTs)**: You should demonstrate your ability to produce working code in a timed and proctored setting over two programming proficiency tests. Each PPT will have a weight of 9 in the final grade computation. (Total number of points: 2 x 10 x 9 = 180.)
-- **Quizzes and Final Exam**: The course is divided into four conceptual modules. To demonstrate an understanding of the principle of software construction, you will be examined on and assigned a grade for each module of the course. During the term there will be a quiz for each of the first three modules. The final exam will be composed of four sections: one for each module. We will use the better performance across the in-term quiz and final exam section to determine the grade for each of the first three modules, whereas the fourth module is examined only in the final exam. Each quiz/module grade will have a weight of 9 in the final grade computation. The quizzes/exam will be scheduled in the computer-based testing facility and you will be able to select a time slot within a range of days to attempt the quiz or final exam. (Total number of points: 4 x 10 x 9 = 360.)
-- **Project**: If you are registered for CPEN 221A then you must complete a group project in addition to other assessments. The project 25 points and a weight of 10. (Total number of points: 1 x 25 x 10 = 250.)
+- **[300 pts] Mini-Projects (MPs)**: The course will involve three mini-projects that will need to be completed individually. The mini-projects are opportunities to synthesize most of the course material and demonstrate one’s ability to implement correct, comprehensible and changeable software. Mini-Projects will span several weeks, allowing sufficient time for learning and implementation. Each mini-project will be graded on a scale of 0-10 and they have a weight of 10 when determining the final grade. (Total number of points: 3 x 10 x 10 = 300.)
+- **[162 pts] Labs**: Each week, there will be shorter activities that will touch upon recent topics, and will typically involve an overview or discussion led by the teaching assistants during the lab sessions. The labs may include weekly programming tasks for additional practice. You may collaborate with one other student on these activities. Lab work should, however, be submitted individually. You must indicate who you collaborated with for each lab activity. There are a total of 10 lab activities, each graded on a scale of 0-9, and they will have a weight of 2 when determining the final grade. We will use the best 9 lab grades in the final grade computation. (Total number of points: 9 x 9 x 2 = 162.)
+- **[550 pts] Quizzes and Final Exam**: To demonstrate an understanding of the principles of software construction, you will be examined periodically over the term. The course content is organized into four modules, but assessed in five parts, so that each part covers a smaller amount of material. The first four parts will be assessed during the term, and the fifth part will be assessed in the final exam. The final exam will also contain additional sections covering content from the previous four parts. We will take the better performance across the in-term quiz and final exam section to determine the grade for each of the four parts, whereas the fifth part is examined only in the final exam. Each quiz grade will have a weight of 11 in the final grade computation. The quizzes/exam will be scheduled in the computer-based testing facility (ORCA) and you will be able to select a time slot within a range of days to attempt the quiz or final exam. (Total number of points: 5 x 10 x 11 = 550.)
+- **[250 pts] Project (CPEN 221A only)**: If you are registered for CPEN 221A then you must complete a group project in addition to other assessments. The project is 25 points and has a weight of 10. (Total number of points: 1 x 25 x 10 = 250.)
 
-### Grades and Letter Grade Thresholds
+At the end of the term, we will aggregate your performance across all activities, as a weighted sum, to determine a final grade. 
+Your final grade will be computed using the following thresholds for different letter grades and we will apply a linear interpolation to assign a numeric score between the bounds for the associated letter grade. The thresholds are different for students in CPEN 221A and CPEN 221B because of the additional project in CPEN 221A.
 
-For some of these activities, you will receive a grade from the following discrete scale. Each level in the scale represents a level of achievement or understanding.
-
-| **Grade** | **Points** | **Interpretation**                                                               |
-| --------- | ---------- | -------------------------------------------------------------------------------- |
-| A+        | 10         | Exceeds expectations                                                             |
-| A         | 9          | Meets all learning expectations                                                  |
-| B         | 7          | Meets most learning expectations                                                 |
-| C         | 5          | Meets some learning expectations                                                 |
-| F         | 0          | No work submitted or does not sufficiently meet any of the learning expectations |
-
-We will sometimes use a B+ (8 points), C+ (6 points) and an F+ (3 points) for work that falls between the different categories. For some activities (e.g., labs), there may be no way to achieve an A+ because the activity is only designed to cover learning expectations and does not offer any opportunity to exceed them.
-
-At the end of the term, we will aggregate your performance across all activities, as a weighted sum, to determine a final grade. Your final grade will be computed using the following thresholds for different letter grades and we will apply a linear interpolation to assign a numeric score between the bounds for the associated letter grade. The thresholds are different for students in CPEN 221A and CPEN 221B because of the additional project in CPEN 221A.
-
-Example: Using the table below, a student in CPEN 221A who obtains 1048 points will have a final grade of 81, computed as (1048-1039)/(1088-1039) x (84-80) + 80 and rounded suitably.
+Example: Using the table below, a student in CPEN 221A who obtains 1060 points will have a final grade of 81, computed as (1060-1047)/(1098-1047) x (84-80) + 80 and rounded suitably.
 
 | **Letter Grade** | **Grade Threshold** |           | **Numeric Score** |     |
 | ---------------- | ------------------- | --------- | ----------------- | --- |
 |                  | CPEN 221A           | CPEN 221B | Min               | Max |
-| Max              | 1252                | 1002      |                   |     |
-| A+               | 1214                | 972       | 90                | 100 |
-| A.               | 1089                | 872       | 85                | 89  |
-| A-               | 1039                | 832       | 80                | 84  |
-| B+               | 989                 | 792       | 76                | 79  |
-| B.               | 876                 | 701       | 72                | 75  |
-| B-               | 826                 | 661       | 68                | 71  |
-| C+               | 776                 | 621       | 65                | 67  |
-| C.               | 689                 | 551       | 60                | 64  |
-| C-               | 576                 | 461       | 55                | 59  |
-| F.               | <= 575              | <= 460    | 0                 | 45  |
-
-### **Achieving an A+**
-
-To achieve an A+ letter grade at the end of the term, you must show consistency across all aspects of the course. For an A+, you must have an average grade of A (9 points) for each of the main assessment types (mini-projects, labs, PPTs, quizzes). In other words, to achieve an A+, you cannot be exceptional in some aspects of the course and mediocre elsewhere. If this consistency criterion, which is in addition to the thresholds in the table above, is not met then you will not achieve more than an A.
-
-An application of this rule is as follows: Suppose a student in CPEN221A obtains 1215 points but has a B+ (8 points) on both PPTs. This student will not get an A+ but will get an A (89).
-
-### **Enthusiasm Points**
-
-We will provide some credit for keeping up your enthusiasm for the course material. This pool of points may provide a small boost to your grade up to the A- range, but not beyond: they can bring someone in CPEN 221A up to 1039 points or someone in CPEN 221B up to 832 points.
-
-Attendance in labs: +0.3 points per session, up to a maximum of 3 points (attendance taken by TAs).
-
-Completing the “Introduction to Java” module: +1 point per part, up to 4 points.
-
-Answering the questions associated with the readings: +0.25 points per, up to a maximum of 5 points. (you get full points by completing each reading questions before the associated lecture)
-
-Completing all lab activities with a minimum grade of C on each lab activity: +5 points. (Only the best 9 lab activities contribute to the baseline point aggregation so this incentivizes completeness.)
+| Max              | 1262                | 1012      |                   |     |
+| A+               | 1224                | 982       | 90                | 100 |
+| A.               | 1098                | 880       | 85                | 89  |
+| A-               | 1047                | 840       | 80                | 84  |
+| B+               | 997                 | 799       | 76                | 79  |
+| B.               | 883                 | 708       | 72                | 75  |
+| B-               | 833                 | 668       | 68                | 71  |
+| C+               | 782                 | 627       | 65                | 67  |
+| C.               | 694                 | 557       | 60                | 64  |
+| C-               | 581                 | 466       | 55                | 59  |
+| F.               | <= 580              | <= 465    | 0                 | 45  |
 
 ### **Bonus Points**
 
-In addition to enthusiasm points, there are also bonus points. Unlike enthusiasm points, which are not considered for awarding an A or A+, bonus points can be used to boost your grade to an A or A+.
+We will provide some credit for keeping up your enthusiasm for the course material. This pool of points may provide a small boost to your grade.
 
-Piazza Contributions:
+- **Attendance in labs**: +0.3 points per session, up to a maximum of 3 points (attendance taken by TAs).
 
+<!-- Answering the questions associated with the readings: +0.25 points per, up to a maximum of 5 points. (you get full points by completing each reading questions before the associated lecture) -->
+
+<!-- Completing all lab activities with a minimum grade of C on each lab activity: +5 points. (Only the best 8 lab activities contribute to the baseline point aggregation so this incentivizes completeness.) -->
+
+- **Piazza Contributions**: 
     - 5 bonus points for the top answerer
     - 4 bonus points for top 2.5% answerers
     - 3 bonus points for top 5% answerers
@@ -360,7 +344,6 @@ The following table summarizes the assessments for which generative AI tools are
 | -------------------------------------- | ------------------------------ |
 | *Mini-Projects (MPs)*                  | Conditionally permitted        |
 | *Labs*                                 | Completely banned              |
-| *Programming Proficiency Tests (PPTs)* | Completely banned              |
 | *Quizzes & Final Exam*                 | Completely banned              |
 | *CPEN221A Project*                     | Conditionally permitted        |
 
@@ -370,7 +353,7 @@ The following table summarizes the assessments for which generative AI tools are
 
 For individual work (labs and mini-projects), we will offer some slack to account for different possibilities.
 
-- [This form](https://docs.google.com/forms/d/e/1FAIpQLSd3HN4Fw0USpvuQi6cK2qpj8fm6wFijn38J5JdkpVWz1h2r0A/viewform?usp=dialog) can be used to indicate your use of late days. It is your responsibility to communicate the use of late days to the course staff through the administered poll, by latest 24 hours after your submission. Otherwise, the late days will not be accounted, and your latest code commit by the original deadline will be considered. 
+- This form (To be added) can be used to indicate your use of late days. It is your responsibility to communicate the use of late days to the course staff through the administered poll, by latest 24 hours after your submission. Otherwise, the late days will not be accounted, and your latest code commit by the original deadline will be considered. 
 - You can submit up to 5 labs one day (24 hours) late with no penalty. 
 - We will allow you 3 late days that you can choose to distribute in increments of one day across the three mini-projects. (You can use one late day per mini-project, or all three for one mini-project, or one extra day for one mini-project and two extra days for a second mini-project.)
 - Any other concession will be on a case-by-case basis and will require a clear and acceptable rationale. (We will provide such concessions only in extenuating circumstances. For instance, we only use the best 9 grades for labs and so we may not need to grant a concession.)
@@ -378,7 +361,6 @@ For individual work (labs and mini-projects), we will offer some slack to accoun
 ## Missed Exams
 
 - If you miss a quiz during the term — for any reason, including varsity sports — then you will simply make up for it during the final exam. (You do not have to let us know in advance about missing a quiz.)
-- The programming proficiency tests (PPTs) are administered in the computer-based testing facility (CBTF) over a multi-day window. Students will select slots and so there are multiple options and we do not anticipate the need for alternative PPTs. In extenuating circumstances, with valid grounds, we may offer an alternative sitting closer to the end of term (and we will do so for at most one PPT).
 - If you miss the final exam then you should request a deferred standing from Engineering Academic Services, and they will grant a deferred standing on a case-by-case basis. You will then write an alternative final exam, typically in the following summer session.
 
 # Reporting Final Grades
@@ -418,11 +400,11 @@ You may make private posts on Piazza that are only visible to instructors and TA
 
 *Where a private post is not justified, your post will be made public by teaching team.* This helps ensure that information and knowledge is fairly spread to the entire class.
 
-**No Questions Will be Answered within 12 Hours of a Submission Deadline**
+**No Questions Will be Answered within 24 Hours of a Submission Deadline**
 
-No questions regarding an assessment will be answered by the teaching team within **12 hours** of the assessment's submission deadline. Such posts will receive a generic reply to this effect:
+No questions regarding an assessment will be answered by the teaching team within **24 hours** of the assessment's submission deadline. Such posts will receive a generic reply to this effect:
 
-*We will not answer this question as it was posted within 12 hours of the submission deadline as per the course policy.*
+*We will not answer this question as it was posted within 24 hours of the submission deadline as per the course policy.*
 
 **Piazza Question Response Time Expectations**
 
@@ -618,7 +600,7 @@ Practice and feedback are key to learning. We have created course activities tha
 
 - lab activities
 - mini-projects
-- programming proficiency tests
+
 
 If you utilize the opportunities then you will accelerate your learning.
 
