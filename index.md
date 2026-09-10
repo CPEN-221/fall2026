@@ -306,13 +306,13 @@ Example: Using the table below, a student in CPEN 221A who obtains 1060 points w
 
 We will provide some credit for being active in Piazza and helping answering questions from other students.
 
-    - 5 bonus points for the top answerer
-    - 4 bonus points for top 2.5% answerers
-    - 3 bonus points for top 5% answerers
+- 5 bonus points for the top answerer
+- 4 bonus points for top 2.5% answerers
+- 3 bonus points for top 5% answerers
 
 ### **Regrading Requests**
 
-Regrading requests should be submitted to the course staff **in writing** as a **private post on Piazza** to the entire teaching team **within one week of grade release**. (Select "All Instructors" on Piazza to include the entire teaching team). The course staff will get back to the submitted requests within two weeks of the request and the decision is final.
+Regrading requests should be submitted to the course staff per the regrade policy for the assignment to the entire teaching team within one week of grade release. Instructions for how to make regrade requests will be made available via Piazza. The course staff will get back to the submitted requests within two weeks of the request and the decision is final.
 
 **Exam Schedule**
 
@@ -323,9 +323,9 @@ Regrading requests should be submitted to the course staff **in writing** as a *
 In line with [UBC's Guidelines for all uses of GenAI in Teaching & Learning](https://genai.ubc.ca/guidance/teaching-learning-guidelines/guidelines-for-all-uses-of-genai-in-teaching-learning/), here we explicitly describe this course's policy on generative AI. According to UBC guidelines, *"Student use of GenAI outside of these stated rules may be considered academic misconduct."* 
 In CPEN 221, the use of generative AI is completely banned for some assessments and conditionally permitted for others. Whenever generative AI is permitted for an assessment, you are required to abide by the assessment's generative AI use policy. These policies, *which may vary across assessments*, can include: 
 
-    1. Constraints on how generative AI might be used;
-    2. Disclosure & reporting requirements to document your use; and
-    3. A mandatory written reflection. 
+1. Constraints on how generative AI might be used;
+2. Disclosure & reporting requirements to document your use; and
+3. A mandatory written reflection. 
 
 If you use generative AI, where permitted, you are still fully responsible for all work submitted (same as in any real-world work environment). If you do not use generative AI where permitted, you are still responsible for declaring “no use” in a manner prescribed by the assessment's generative AI policy. 
 
@@ -346,7 +346,7 @@ The following table summarizes the assessments for which generative AI tools are
 
 For individual work (labs and mini-projects), we will offer some slack to account for different possibilities.
 
-- This form [TO BE ADDED!] can be used to indicate your use of late days. It is your responsibility to communicate the use of late days to the course staff through the administered poll, by latest 24 hours after your submission. Otherwise, the late days will not be accounted, and your latest code commit by the original deadline will be considered. 
+- This form [TO BE ADDED!] can be used to indicate your use of late days. It is your responsibility to communicate the use of late days to the course staff through the administered poll, by latest 24 hours after your submission. Otherwise, the late days will not be accounted, and your latest code commit by the original deadline will be considered.
 - **IMPORTANT**: if you use a late day, you cannot take it back! Make sure you only fill the late day form when you actually need the late day.
 - You can submit up to 5 labs one day (24 hours) late with no penalty. 
 - We will allow you 3 late days that you can choose to distribute in increments of one day across the three mini-projects. (You can use one late day per mini-project, or all three for one mini-project, or one extra day for one mini-project and two extra days for a second mini-project.)
