@@ -346,7 +346,7 @@ The following table summarizes the assessments for which generative AI tools are
 
 For individual work (labs and mini-projects), we will offer some slack to account for different possibilities.
 
-- This form [TO BE ADDED!] can be used to indicate your use of late days. It is your responsibility to communicate the use of late days to the course staff through the administered poll, by latest 24 hours after your submission. Otherwise, the late days will not be accounted, and your latest code commit by the original deadline will be considered.
+- To indicate your use of late days, please complete the [Late Days Indication](https://docs.google.com/forms/d/e/1FAIpQLSfr1X73zuBrLKiQQ_Z6aGAB9Bh1ebSwgBPlMiYs2wIBY0T50Q/viewform?usp=publish-editor) form. It is your responsibility to communicate the use of late days to the course staff through the administered form by latest 24 hours after your submission. Otherwise, the late days will not be accounted, and your latest code commit by the original deadline will be considered.
 - **IMPORTANT**: if you use a late day, you cannot take it back! Make sure you only fill the late day form when you actually need the late day.
 - You can submit up to 5 labs one day (24 hours) late with no penalty. 
 - We will allow you 3 late days that you can choose to distribute in increments of one day across the three mini-projects. (You can use one late day per mini-project, or all three for one mini-project, or one extra day for one mini-project and two extra days for a second mini-project.)
