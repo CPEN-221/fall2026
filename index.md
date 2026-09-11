@@ -6,7 +6,9 @@ term: Fall 2026
 permalink: /
 ---
 
-# Instructional Team
+# Course Information
+
+## Instructional Team
 
 ### Instructors
 
@@ -24,7 +26,7 @@ permalink: /
 - Geoffrey Bian, BASc student, Computer Engineering
 - Donghwa Kim, BASc student, Computer Engineering
 
-# Class Meeting Times
+## Class Meeting Times
 
 The class has scheduled lecture sessions, tutorial sessions and lab sessions.
 
@@ -49,7 +51,9 @@ Teaching assistants will lead these sessions, often providing an overview of som
 | Fridays 2-3:30pm     | MCLD 4006    | CPEN 221B L1A |
 
 
-# Core Topics
+# Course Content
+
+## Core Topics
 
 The course topics are organized into four modules. 
 We will cover all of the topics mostly in keeping with the module structure outlined below, but there will be some key departures in sequencing when it is important to understand some concepts earlier (e.g., aspects of memory management in Module 3) even though they may be listed in a later module.
@@ -96,7 +100,7 @@ We will cover all of the topics mostly in keeping with the module structure outl
 - Shared memory programming
 - Concurrent programs and safety
 
-# Learning Outcomes
+## Learning Outcomes
 
 ### Module 1
 
@@ -128,7 +132,7 @@ We will cover all of the topics mostly in keeping with the module structure outl
     - Use exceptions in programs
     - Identify the strengths and weaknesses of exceptions in modern programming languages
 
-## Module 2
+### Module 2
 
 - **Mutability and immutability**
     - Explain mutability and immutability in the context of data types
@@ -156,7 +160,7 @@ We will cover all of the topics mostly in keeping with the module structure outl
     - Make design choices about when to use inheritance and when not to
     - Use interfaces and composition to achieve safer code reuse
 
-## Module 3
+### Module 3
 
 - **Recursion**
     - Explain recursion as a mathematical idea
@@ -183,7 +187,7 @@ We will cover all of the topics mostly in keeping with the module structure outl
     - Explain the role of the memory heap in a computer system
     - Explain a buffer overflow attack
 
-## Module 4
+### Module 4
 
 - **Concurrency vs. parallelism**
     - Distinguish between parallelism and concurrency
@@ -206,16 +210,89 @@ We will cover all of the topics mostly in keeping with the module structure outl
 - **Concurrent programs and safety**
     - Write thread-safety arguments to establish that a concurrent program does not have a data race or bad interleavings
 
-## Software in Practice
+### Software in Practice
 
 - Use of modern IDEs and version control (git)
 - Demonstrate implementation of moderate sized software (100s - 1000s of lines of code)
 - Develop algorithms for tasks with simple to moderate complexity
 - Demonstrate some ability in implementing software with greater algorithmic sophistication
 
+# Assessment and Grading
+
+## Activities
+
+Your understanding of the course material will be assessed using a variety of course activities. 
+The primary activities that we will use are indicated below. The total number of points you can obtain are described as follows.
+
+(total # of points for an activity) = (# of assignments for the activity) x (max # of points attainable for any assignments of the activity) x (weight associated with the activity)
+
+- **[300 pts] Mini-Projects (MPs)**: The course will involve three mini-projects that will need to be completed individually. The mini-projects are opportunities to synthesize most of the course material and demonstrate one’s ability to implement correct, comprehensible and changeable software. Mini-Projects will span several weeks, allowing sufficient time for learning and implementation. Each mini-project will be graded on a scale of 0-10 and they have a weight of 10 when determining the final grade. (Total number of points: 3 x 10 x 10 = 300.)
+- **[162 pts] Labs**: Each week, there will be shorter activities that will touch upon recent topics, and will typically involve an overview or discussion led by the teaching assistants during the lab sessions. The labs may include weekly programming tasks for additional practice. You may collaborate with one other student on these activities. Lab work should, however, be submitted individually. You must indicate who you collaborated with for each lab activity. There are a total of 10 lab activities, each graded on a scale of 0-9, and they will have a weight of 2 when determining the final grade. We will use the best 9 lab grades in the final grade computation. (Total number of points: 9 x 9 x 2 = 162.)
+- **[550 pts] Quizzes and Final Exam**: To demonstrate an understanding of the principles of software construction, you will be examined periodically over the term. The course content is organized into four modules, but assessed in five parts, so that each part covers a smaller amount of material. The first four parts will be assessed during the term, and the fifth part will be assessed in the final exam. The final exam will also contain additional sections covering content from the previous four parts. We will take the better performance across the in-term quiz and final exam section to determine the grade for each of the four parts, whereas the fifth part is examined only in the final exam. Each quiz grade will have a weight of 11 in the final grade computation. The quizzes/exam will be scheduled in the computer-based testing facility (ORCA) and you will be able to select a time slot within a range of days to attempt the quiz or final exam. (Total number of points: 5 x 10 x 11 = 550.)
+- **[250 pts] Project (CPEN 221A only)**: If you are registered for CPEN 221A then you must complete a group project in addition to other assessments. The project is 25 points and has a weight of 10. (Total number of points: 1 x 25 x 10 = 250.)
+
+At the end of the term, we will aggregate your performance across all activities, as a weighted sum, to determine a final grade. 
+Your final grade will be computed using the following thresholds for different letter grades and we will apply a linear interpolation to assign a numeric score between the bounds for the associated letter grade. The thresholds are different for students in CPEN 221A and CPEN 221B because of the additional project in CPEN 221A.
+
+Example: Using the table below, a student in CPEN 221A who obtains 1060 points will have a final grade of 81, computed as (1060-1047)/(1098-1047) x (84-80) + 80 and rounded suitably.
+
+| **Letter Grade** | **Grade Threshold** |           | **Numeric Score** |     |
+| ---------------- | ------------------- | --------- | ----------------- | --- |
+|                  | CPEN 221A           | CPEN 221B | Min               | Max |
+| Max              | 1262                | 1012      |                   |     |
+| A+               | 1224                | 982       | 90                | 100 |
+| A.               | 1098                | 880       | 85                | 89  |
+| A-               | 1047                | 840       | 80                | 84  |
+| B+               | 997                 | 799       | 76                | 79  |
+| B.               | 883                 | 708       | 72                | 75  |
+| B-               | 833                 | 668       | 68                | 71  |
+| C+               | 782                 | 627       | 65                | 67  |
+| C.               | 694                 | 557       | 60                | 64  |
+| C-               | 581                 | 466       | 55                | 59  |
+| F.               | <= 580              | <= 465    | 0                 | 45  |
+
+## Bonus Points from Piazza Contributions
+
+We will provide some credit for being active in Piazza and helping answering questions from other students.
+
+- 5 bonus points for the top answerer
+- 4 bonus points for top 2.5% answerers
+- 3 bonus points for top 5% answerers
+
+## Regrading Requests
+
+Regrading requests should be submitted to the course staff per the regrade policy for the assignment to the entire teaching team within one week of grade release. Instructions for how to make regrade requests will be made available via Piazza. The course staff will get back to the submitted requests within two weeks of the request and the decision is final.
+
+**Exam Schedule**
+
+> **Fall 2026 exam schedule:** Dates and locations will be posted here after they are confirmed.
+
+## Late Submissions and Missed Exams
+
+### Late submissions
+
+For individual work (labs and mini-projects), we will offer some slack to account for different possibilities.
+
+- To indicate your use of late days, please complete the [Late Days Indication](https://docs.google.com/forms/d/e/1FAIpQLSfr1X73zuBrLKiQQ_Z6aGAB9Bh1ebSwgBPlMiYs2wIBY0T50Q/viewform?usp=publish-editor) form. It is your responsibility to communicate the use of late days to the course staff through the administered form by latest 24 hours after your submission. Otherwise, the late days will not be accounted, and your latest code commit by the original deadline will be considered.
+- **IMPORTANT**: if you use a late day, you cannot take it back! Make sure you only fill the late day form when you actually need the late day.
+- You can submit up to 5 labs one day (24 hours) late with no penalty. 
+- We will allow you 3 late days that you can choose to distribute in increments of one day across the three mini-projects. (You can use one late day per mini-project, or all three for one mini-project, or one extra day for one mini-project and two extra days for a second mini-project.)
+- Any other concession will be on a case-by-case basis and will require a clear and acceptable rationale. (We will provide such concessions only in extenuating circumstances. For instance, we only use the best 9 grades for labs and so we may not need to grant a concession.)
+
+### Missed Exams
+
+- If you miss a quiz during the term — for any reason, including varsity sports — then you will simply make up for it during the final exam. (You do not have to let us know in advance about missing a quiz.)
+- If you miss the final exam then you should request a deferred standing from Engineering Academic Services, and they will grant a deferred standing on a case-by-case basis. You will then write an alternative final exam, typically in the following summer session.
+
+## Reporting Final Grades
+
+The Department of Electrical and Computer Engineering has a review process for grades across all courses at the end of each academic term. Course grades will be released only after the review is complete and this may mean that grades are not available until late December or the first day of the January term.
+
+In cases of academic misconduct, grades may be revised after the misconduct proceedings conclude.
+
 # Policies
 
-# Code of Conduct
+## Code of Conduct
 
 ### Introduction
 
@@ -251,7 +328,7 @@ We will cover all of the topics mostly in keeping with the module structure outl
 - If you are the subject of or witness to any violations of this Code of Conduct, please contact us by writing to the admin team [instructors]. This group of people will be the final decision-makers and enforcers on the Code of Conduct violations.
 - If violations occur, organizers will take any action they deem appropriate for the infraction, up to and including expulsion.
 
-# Academic Integrity
+## Academic Integrity
 
 You should familiarize yourself with UBC’s [policy on student conduct and discipline](http://www.calendar.ubc.ca/vancouver/index.cfm?tree=3,54,0,0). The penalties for cheating are serious: you can fail a class, receive a letter of reprimand that will also appear on your university record, be suspended or be expelled.
 
@@ -268,57 +345,7 @@ Your Solutions: You must individually compose all of your solutions. The term so
 
 These rules continue to apply even after the semester is over.
 
-# Assessment and Grading
-
-### Activities
-
-Your understanding of the course material will be assessed using a variety of course activities. 
-The primary activities that we will use are indicated below. The total number of points you can obtain are described as follows.
-
-(total # of points for an activity) = (# of assignments for the activity) x (max # of points attainable for any assignments of the activity) x (weight associated with the activity)
-
-- **[300 pts] Mini-Projects (MPs)**: The course will involve three mini-projects that will need to be completed individually. The mini-projects are opportunities to synthesize most of the course material and demonstrate one’s ability to implement correct, comprehensible and changeable software. Mini-Projects will span several weeks, allowing sufficient time for learning and implementation. Each mini-project will be graded on a scale of 0-10 and they have a weight of 10 when determining the final grade. (Total number of points: 3 x 10 x 10 = 300.)
-- **[162 pts] Labs**: Each week, there will be shorter activities that will touch upon recent topics, and will typically involve an overview or discussion led by the teaching assistants during the lab sessions. The labs may include weekly programming tasks for additional practice. You may collaborate with one other student on these activities. Lab work should, however, be submitted individually. You must indicate who you collaborated with for each lab activity. There are a total of 10 lab activities, each graded on a scale of 0-9, and they will have a weight of 2 when determining the final grade. We will use the best 9 lab grades in the final grade computation. (Total number of points: 9 x 9 x 2 = 162.)
-- **[550 pts] Quizzes and Final Exam**: To demonstrate an understanding of the principles of software construction, you will be examined periodically over the term. The course content is organized into four modules, but assessed in five parts, so that each part covers a smaller amount of material. The first four parts will be assessed during the term, and the fifth part will be assessed in the final exam. The final exam will also contain additional sections covering content from the previous four parts. We will take the better performance across the in-term quiz and final exam section to determine the grade for each of the four parts, whereas the fifth part is examined only in the final exam. Each quiz grade will have a weight of 11 in the final grade computation. The quizzes/exam will be scheduled in the computer-based testing facility (ORCA) and you will be able to select a time slot within a range of days to attempt the quiz or final exam. (Total number of points: 5 x 10 x 11 = 550.)
-- **[250 pts] Project (CPEN 221A only)**: If you are registered for CPEN 221A then you must complete a group project in addition to other assessments. The project is 25 points and has a weight of 10. (Total number of points: 1 x 25 x 10 = 250.)
-
-At the end of the term, we will aggregate your performance across all activities, as a weighted sum, to determine a final grade. 
-Your final grade will be computed using the following thresholds for different letter grades and we will apply a linear interpolation to assign a numeric score between the bounds for the associated letter grade. The thresholds are different for students in CPEN 221A and CPEN 221B because of the additional project in CPEN 221A.
-
-Example: Using the table below, a student in CPEN 221A who obtains 1060 points will have a final grade of 81, computed as (1060-1047)/(1098-1047) x (84-80) + 80 and rounded suitably.
-
-| **Letter Grade** | **Grade Threshold** |           | **Numeric Score** |     |
-| ---------------- | ------------------- | --------- | ----------------- | --- |
-|                  | CPEN 221A           | CPEN 221B | Min               | Max |
-| Max              | 1262                | 1012      |                   |     |
-| A+               | 1224                | 982       | 90                | 100 |
-| A.               | 1098                | 880       | 85                | 89  |
-| A-               | 1047                | 840       | 80                | 84  |
-| B+               | 997                 | 799       | 76                | 79  |
-| B.               | 883                 | 708       | 72                | 75  |
-| B-               | 833                 | 668       | 68                | 71  |
-| C+               | 782                 | 627       | 65                | 67  |
-| C.               | 694                 | 557       | 60                | 64  |
-| C-               | 581                 | 466       | 55                | 59  |
-| F.               | <= 580              | <= 465    | 0                 | 45  |
-
-### **Bonus Points from Piazza Contributions**
-
-We will provide some credit for being active in Piazza and helping answering questions from other students.
-
-- 5 bonus points for the top answerer
-- 4 bonus points for top 2.5% answerers
-- 3 bonus points for top 5% answerers
-
-### **Regrading Requests**
-
-Regrading requests should be submitted to the course staff per the regrade policy for the assignment to the entire teaching team within one week of grade release. Instructions for how to make regrade requests will be made available via Piazza. The course staff will get back to the submitted requests within two weeks of the request and the decision is final.
-
-**Exam Schedule**
-
-> **Fall 2026 exam schedule:** Dates and locations will be posted here after they are confirmed.
-
-# Use of Generative AI
+## Use of Generative AI
 
 In line with [UBC's Guidelines for all uses of GenAI in Teaching & Learning](https://genai.ubc.ca/guidance/teaching-learning-guidelines/guidelines-for-all-uses-of-genai-in-teaching-learning/), here we explicitly describe this course's policy on generative AI. According to UBC guidelines, *"Student use of GenAI outside of these stated rules may be considered academic misconduct."* 
 In CPEN 221, the use of generative AI is completely banned for some assessments and conditionally permitted for others. Whenever generative AI is permitted for an assessment, you are required to abide by the assessment's generative AI use policy. These policies, *which may vary across assessments*, can include: 
@@ -340,32 +367,9 @@ The following table summarizes the assessments for which generative AI tools are
 | *Quizzes & Final Exam*                 | Completely banned              |
 | *CPEN221A Project*                     | Conditionally permitted        |
 
-# Late Submissions and Missed Exams
-
-## Late submissions
-
-For individual work (labs and mini-projects), we will offer some slack to account for different possibilities.
-
-- To indicate your use of late days, please complete the [Late Days Indication](https://docs.google.com/forms/d/e/1FAIpQLSfr1X73zuBrLKiQQ_Z6aGAB9Bh1ebSwgBPlMiYs2wIBY0T50Q/viewform?usp=publish-editor) form. It is your responsibility to communicate the use of late days to the course staff through the administered form by latest 24 hours after your submission. Otherwise, the late days will not be accounted, and your latest code commit by the original deadline will be considered.
-- **IMPORTANT**: if you use a late day, you cannot take it back! Make sure you only fill the late day form when you actually need the late day.
-- You can submit up to 5 labs one day (24 hours) late with no penalty. 
-- We will allow you 3 late days that you can choose to distribute in increments of one day across the three mini-projects. (You can use one late day per mini-project, or all three for one mini-project, or one extra day for one mini-project and two extra days for a second mini-project.)
-- Any other concession will be on a case-by-case basis and will require a clear and acceptable rationale. (We will provide such concessions only in extenuating circumstances. For instance, we only use the best 9 grades for labs and so we may not need to grant a concession.)
-
-## Missed Exams
-
-- If you miss a quiz during the term — for any reason, including varsity sports — then you will simply make up for it during the final exam. (You do not have to let us know in advance about missing a quiz.)
-- If you miss the final exam then you should request a deferred standing from Engineering Academic Services, and they will grant a deferred standing on a case-by-case basis. You will then write an alternative final exam, typically in the following summer session.
-
-# Reporting Final Grades
-
-The Department of Electrical and Computer Engineering has a review process for grades across all courses at the end of each academic term. Course grades will be released only after the review is complete and this may mean that grades are not available until late December or the first day of the January term.
-
-In cases of academic misconduct, grades may be revised after the misconduct proceedings conclude.
-
 # Guidelines and Advice
 
-# Course Communication
+## Course Communication
 
 **We will use Piazza for all course-related communication.**
 
@@ -446,7 +450,7 @@ It is great to make some headway on your problem before asking a question. But, 
 
 Finally, if you ask a question and later discover the answer, then please let everybody know! This will help others, and will prevent anyone from wasting time continuing to answer a moot question.
 
-# Collaboration
+## Collaboration
 
 - Discussion is encouraged!
 - We expect highly ethical behaviour.
@@ -503,7 +507,7 @@ We will use technological and other means to detect cheating.
 | view solutions from ...            | ✔                            | no           | no         | maybe       | no    |
 | plagiarise code from ...           | no                           | no           | no         | no          | no    |
 
-# Teamwork
+## Teamwork
 
 Teamwork is a crucial part of many professional and vocational activities. In a professional setting, a team works together to accomplish a task. In a broader societal context, team work is integral to making informed, democratic decisions and performing suitable actions.
 
@@ -574,11 +578,11 @@ To accelerate a team’s development, a team contract is generated to establish 
 Successful team performance depends on personal individual accountability. In a team environment, individuals are usually effectively motivated to maximize their own rewards and minimize their own costs. However, conflicts can arise when individualistic motives or behaviours disrupt team-oriented goals. For example, conflict can stem from an unequal division of resources. When team members believe they are receiving too little for what they are giving, they sometimes reduce their effort and turn in work of lower quality. Such “free riding” occurs most frequently when individual contributions are combined into a single product or performance, and individual effort is perceived as unequal. At this point, some individual team members may take on extra responsibilities while other team members may reduce their own efforts or withdraw from the team completely. These behaviours may engender anger, frustration, or isolation—resulting in a dysfunctional team and poor quality of work. However, with a well-formulated team contract, such obstacles can usually be avoided.
 
 
-# How to Succeed in CPEN 221
+## How to Succeed in CPEN 221
 
 CPEN 221 is intended to lay the foundation for a successful career working with software systems. Even if you do not foresee working with software systems in the future, you will learn some fundamental principles for managing the complexity that is inherent in any enterprise. In this missive, we will discuss how one might maximize their learning in this course and also address some common questions that have come up in the past and are very likely to be relevant to new students.
 
-## Programming Fluency
+### Programming Fluency
 
 CPEN 221 requires basic programming fluency. By fluency we mean comfort in writing programs in some language. We use Java as the programming language in this course, but having prior experience with any other language is a good starting point.
 
@@ -588,7 +592,7 @@ Learning a new language is sometimes difficult, but one can navigate this task b
 
 It may not appear so during the term, but most former students attest to the need for learning aspects of a programming language on their own — and in a short timespan — as one of the major benefits of CPEN 221.
 
-## **About the Course Structure**
+### About the Course Structure
 
 Practice and feedback are key to learning. We have created course activities that provide you many opportunities to learn:
 
@@ -605,7 +609,7 @@ We will also spend a lot of time when we meet discussing material, but not in th
 1. [Course Transformation Guide](http://www.cwsei.ubc.ca/resources/files/CourseTransformationGuide_CWSEI_CU-SEI.pdf), Carl Wieman Science Education Initiative
 2. [Improved Learning in a Large-Enrollment Physics Class](http://science.sciencemag.org/content/332/6031/862.full), Deslauriers, Schelew, Wieman
 
-## Readings
+### Readings
 
 Why do I need to do the readings at all? The readings are the primary medium for communicating the conceptual material in this course. The lectures are meant to motivate the theory, provide a seasoned perspective from the instructors’ experience, explore key ideas, and perform demonstrations. Current & former teaching assistants have noted that it is impossible to do well on the theoretical component of the course without doing the readings.
 
@@ -615,7 +619,7 @@ Why do I need to complete the readings before class? Since doing the readings at
 
 One of the tragicomic statements that was part of the student feedback to this course from a couple of years ago was that there was too much reading and that "... we are engineers not readers". There are several ways to respond to this comment. But one of the main threads in the response has to do with the role of reading in software engineering. Programming is a creative task. The end goals are often to build a working system when the requirements are expressed informally, in a natural language, by people (colleagues, users, clients). If software engineers cannot read carefully, they cannot understand what they have to do. They will not realize that there are holes that need to be filled in. (A big barrier to writing good software is unstated assumptions -- and much of this course is about overcoming that hurdle.) Their code will not meet the need, and it will behave unexpectedly. And then a programmer may smooth over a gap in a way that does not match the unexpressed desires of the user. As professors, one of the most common problems we encounter is that students who think they know to program fail to read and interpret correctly a carefully crafted problem statement. They would sometimes complain that the statement was confusing, but the reality was that the statements they complained about were, for the most part, complete and unambiguous. The same need for rigorous, analytic reading pervades many facets of system building: interpreting requirements, protocol specifications, algorithm definitions, and language and API documentation.
 
-## Laptops in the Classroom
+### Laptops in the Classroom
 
 You can use laptops when needed but — unless you are told to open up your laptops — they should usually remain closed. Your laptop, and even your smartphone, is a huge opportunity for distraction. And the price for this distraction will be paid not just by you but by those all around you.
 
@@ -631,7 +635,7 @@ If you want to use a smartphone in your lap, so that the screen is not visible a
 1. [Laptop multitasking hinders classroom learning for both users and nearby peers](http://www.sciencedirect.com/science/article/pii/S0360131512002254), Sana et al.
 2. [The Pen Is Mightier Than the Keyboard: Advantages of Longhand Over Laptop Note Taking](http://pss.sagepub.com/content/25/6/1159.full), Mueller and Oppenheimer
 
-## Programming Tools
+### Programming Tools
 
 "The tools we use have a profound and devious influence on our thinking habits, and therefore on our thinking abilities." — Dijkstra
 
@@ -639,11 +643,11 @@ We will introduce you to several tools in this course. IntelliJ IDEA, JUnit and 
 
 Having used a distributed source code control system such as Git makes it easier to adjust to other tools that have the same purpose. For example, your co-op employer may be using [Mercurial](https://www.mercurial-scm.org/), which is another distributed source control management system. It does help to understand why you need the tools first so investigate for yourself. Do some reading.
 
-## Java vs. Software Construction Principles
+### Java vs. Software Construction Principles
 
 The overarching theme is good software construction practices. It may appear that there is more about Java but this is incidental to the process of learning both the principles and the language at the same time. But -- we do not want to have people start with bad habits so we favour this approach. When you are programming, make the effort to connect what you are doing to the course concepts: this will happen when you are not thinking only about syntax.
 
-## How to Become a Good Programmer
+### How to Become a Good Programmer
 
 Achieving excellence in any activity takes time but there are few things you should plan to do.
 
@@ -655,7 +659,7 @@ Achieving excellence in any activity takes time but there are few things you sho
 6. Become comfortable with many languages. At least one of the languages you know should be a functional programming language.
 7. Understand the computer: how does it execute a program?
 
-## Hints for Success in CPEN 221
+### Hints for Success in CPEN 221
 
 1. Start on assignments early. We cannot emphasise this enough.
 2. Understand the problem you are trying to solve using software. Decompose the problem into parts. Sketch a high-level solution on paper. Then write code - on a computer. You do not need to draw formal flowcharts; clear notes are often sufficient.
@@ -665,11 +669,11 @@ Achieving excellence in any activity takes time but there are few things you sho
 6. Ask for help if you are stuck. The course staff are here to support you. Use office hours and the course discussion forum wisely. When you ask for help, be prepared to explain what you have done so far.
 7. Do not fear to write code that will not work and then to debug the code. You will learn more from that experience than from suggestions people may provide to avoid problems.
 
-## Different Courses Have Different Contexts
+### Different Courses Have Different Contexts
 
 In addition to the overall increase in software-driven automation around us, the practice of developing software that you learn now is something that you will take with you to a job. You will engage in similar discussions on how to construct good software in a workplace. This extension to the workplace is somewhat different from the critical thinking and understanding that you gain in other courses, e.g., mathematics, physics, circuit analysis. In those other courses, much of what you learn is actually automated in practice, and you would use design tools that hide routine computations. The learning from a course like CPEN 221 (or, for that matter, CPEN 211) is about both principles and practice, whereas the emphasis in some other courses would only be the scientific and mathematical principles. As a consequence, you should expect a palpable difference in the "feel" of this course when you compare it to some other courses. This comment is not intended to downplay other courses (they are important; for example, the rigour of MATH 220 will help you understand some aspects of CPEN 221 better) but to indicate the difference in expectations.
 
-## Motivation
+### Motivation
 
 Remember that you have chosen fields of engineering that rely heavily on software systems. Even if you see yourself as a physicist, you may want to keep in mind that some of the most recent developments in the physical and chemical sciences are a result of software models and simulations of the real world. The 2013 Nobel Prize in Chemistry was awarded for [computational chemistry](http://blogs.scientificamerican.com/the-curious-wavefunction/computational-chemistry-wins-2013-nobel-prize-in-chemistry/). Software solutions are guiding the design of new drugs, for example. Hopefully, you do not want poor software construction to lead to mistakes in drug production!
 
@@ -684,13 +688,13 @@ Stay motivated: [the payoff is worthwhile](http://www.wsj.com/articles/SB1000142
 - [Confusion in Comprehending Code](https://cpen221ubc.notion.site/Confusion-in-Comprehending-Code-05043900d6b6404bb36fa8443b35bc09?pvs=4), CPEN 221 staff
 
 
-# Books
+## Books
 
 The course readings are the textbook for CPEN 221. You do not need to buy another
 book. The resources below are references and extensions: choose one that matches
 the question you are trying to answer.
 
-## Closest companion
+### Closest companion
 
 [Martin P. Robillard, *Introduction to Software Design with Java*, third edition
 (2026)](https://link.springer.com/book/9783032118202) is the closest companion to
@@ -699,7 +703,7 @@ composition, inheritance, and functional techniques using current Java. The CPEN
 221 readings remain the authority for course terminology, specifications,
 representation invariants, concurrency, and assessment expectations.
 
-## Books by purpose
+### Books by purpose
 
 | If you need… | Read… | Keep in mind… |
 |---|---|---|
@@ -715,7 +719,7 @@ representation invariants, concurrency, and assessment expectations.
 | systematic debugging experiments | Andreas Zeller, [*The Debugging Book*](https://www.debuggingbook.org/) | The book is free and interactive. Its examples use Python; focus on the language-independent techniques. |
 | a next step after CPEN 221 | Martin Kleppmann and Chris Riccomini, [*Designing Data-Intensive Applications*, second edition (2026)](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781098119058/) | This is an advanced systems book, not a companion for weekly course material. |
 
-## Authoritative online references
+### Authoritative online references
 
 Use [dev.java](https://dev.java/learn/) when you need an explanation of a Java
 feature. Use the [Java SE 25 API](https://docs.oracle.com/en/java/javase/25/docs/api/index.html)
@@ -724,7 +728,7 @@ when exact language or JVM behaviour matters. The course uses JUnit 6.1.3; its
 [versioned documentation](https://docs.junit.org/6.1.3/overview.html) matches the
 examples and build files used in Fall 2026.
 
-## Access
+### Access
 
 Before buying a book, check [O’Reilly for Higher Education through the UBC
 Library](https://guides.library.ubc.ca/az/oreilly-for-higher-education). UBC provides access to
